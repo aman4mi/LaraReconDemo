@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LedgerController;
+use App\Http\Controllers\AgraniBankStatementController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +42,9 @@ Route::post('queryexewithdata', [LedgerController::class, 'ledgerExecutorSqlData
 Route::get('wel2', [LedgerController::class, 'welcomeTwo']);
 Route::get('lata', [LedgerController::class, 'lataD'])->name('lata');
 Route::get('latadata', [LedgerController::class, 'getLata'])->name('lata.list');
+
+//agrani
+Route::get('ag-bank-show', [AgraniBankStatementController::class, 'agraniBankStmntImportShow'])->name('ag-bank-show');
+Route::post('ag-bank-file-import', [AgraniBankStatementController::class, 'agraniBankStmntImport'])->name('ag-bank-file-import');
+
+

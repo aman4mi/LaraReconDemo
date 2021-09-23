@@ -9,7 +9,8 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Styles -->
     <style>
@@ -292,122 +293,148 @@
             grid-template-columns: repeat(1, minmax(0, 1fr))
         }
 
-        @media (min-width:640px) {
-            .sm\:rounded-lg {
-                border-radius: .5rem
-            }
-            .sm\:block {
-                display: block
-            }
-            .sm\:items-center {
-                align-items: center
-            }
-            .sm\:justify-start {
-                justify-content: flex-start
-            }
-            .sm\:justify-between {
-                justify-content: space-between
-            }
-            .sm\:h-20 {
-                height: 5rem
-            }
-            .sm\:ml-0 {
-                margin-left: 0
-            }
-            .sm\:px-6 {
-                padding-left: 1.5rem;
-                padding-right: 1.5rem
-            }
-            .sm\:pt-0 {
-                padding-top: 0
-            }
-            .sm\:text-left {
-                text-align: left
-            }
-            .sm\:text-right {
-                text-align: right
-            }
+        <blade media|%20(min-width%3A640px)%20%7B>.sm\:rounded-lg {
+            border-radius: .5rem
         }
 
-        @media (min-width:768px) {
-            .md\:border-t-0 {
-                border-top-width: 0
-            }
-            .md\:border-l {
-                border-left-width: 1px
-            }
-            .md\:grid-cols-2 {
-                grid-template-columns: repeat(2, minmax(0, 1fr))
-            }
+        .sm\:block {
+            display: block
         }
 
-        @media (min-width:1024px) {
-            .lg\:px-8 {
-                padding-left: 2rem;
-                padding-right: 2rem
-            }
+        .sm\:items-center {
+            align-items: center
         }
 
-        @media (prefers-color-scheme:dark) {
-            .dark\:bg-gray-800 {
-                --bg-opacity: 1;
-                background-color: #2d3748;
-                background-color: rgba(45, 55, 72, var(--bg-opacity))
-            }
-            .dark\:bg-gray-900 {
-                --bg-opacity: 1;
-                background-color: #1a202c;
-                background-color: rgba(26, 32, 44, var(--bg-opacity))
-            }
-            .dark\:border-gray-700 {
-                --border-opacity: 1;
-                border-color: #4a5568;
-                border-color: rgba(74, 85, 104, var(--border-opacity))
-            }
-            .dark\:text-white {
-                --text-opacity: 1;
-                color: #fff;
-                color: rgba(255, 255, 255, var(--text-opacity))
-            }
-            .dark\:text-gray-400 {
-                --text-opacity: 1;
-                color: #cbd5e0;
-                color: rgba(203, 213, 224, var(--text-opacity))
-            }
+        .sm\:justify-start {
+            justify-content: flex-start
         }
+
+        .sm\:justify-between {
+            justify-content: space-between
+        }
+
+        .sm\:h-20 {
+            height: 5rem
+        }
+
+        .sm\:ml-0 {
+            margin-left: 0
+        }
+
+        .sm\:px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem
+        }
+
+        .sm\:pt-0 {
+            padding-top: 0
+        }
+
+        .sm\:text-left {
+            text-align: left
+        }
+
+        .sm\:text-right {
+            text-align: right
+        }
+        }
+
+        <blade media|%20(min-width%3A768px)%20%7B>.md\:border-t-0 {
+            border-top-width: 0
+        }
+
+        .md\:border-l {
+            border-left-width: 1px
+        }
+
+        .md\:grid-cols-2 {
+            grid-template-columns: repeat(2, minmax(0, 1fr))
+        }
+        }
+
+        <blade media|%20(min-width%3A1024px)%20%7B>.lg\:px-8 {
+            padding-left: 2rem;
+            padding-right: 2rem
+        }
+        }
+
+        <blade media|%20(prefers-color-scheme%3Adark)%20%7B>.dark\:bg-gray-800 {
+            --bg-opacity: 1;
+            background-color: #2d3748;
+            background-color: rgba(45, 55, 72, var(--bg-opacity))
+        }
+
+        .dark\:bg-gray-900 {
+            --bg-opacity: 1;
+            background-color: #1a202c;
+            background-color: rgba(26, 32, 44, var(--bg-opacity))
+        }
+
+        .dark\:border-gray-700 {
+            --border-opacity: 1;
+            border-color: #4a5568;
+            border-color: rgba(74, 85, 104, var(--border-opacity))
+        }
+
+        .dark\:text-white {
+            --text-opacity: 1;
+            color: #fff;
+            color: rgba(255, 255, 255, var(--text-opacity))
+        }
+
+        .dark\:text-gray-400 {
+            --text-opacity: 1;
+            color: #cbd5e0;
+            color: rgba(203, 213, 224, var(--text-opacity))
+        }
+        }
+
     </style>
 
     <style>
         body {
             font-family: 'Nunito', sans-serif;
         }
+
         .img-responsive {
-                display: block;
-                max-width: 100%;
-                height: auto;
-                padding-top: 0 ;
-                /* margin:.5% .5% .5% .5% !important; */
-                }
+            display: block;
+            max-width: 100%;
+            height: auto;
+            padding-top: 0;
+            /* margin:.5% .5% .5% .5% !important; */
+        }
+
+        .list-size {
+            width: 200%;
+            height: auto;
+            padding-top: 0;
+        }
+
     </style>
 </head>
 
 <body class="antialiased">
-    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-start py-1 sm:pt-0">
-        @if (Route::has('login')) -->
-      <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-            @auth
-            <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a> @else
-            <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a> @if (Route::has('register'))
-            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a> @endif @endauth
-        </div>
+    <div
+        class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-start py-1 sm:pt-0">
+        @if(Route::has('login')) -->
+            <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                @auth
+                    <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
+                @else
+                    <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
+                    @if(Route::has('register'))
+                        <a href="{{ route('register') }}"
+                            class="ml-4 text-sm text-gray-700 underline">Register</a> @endif @endauth
+            </div>
         @endif
 
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <img src="{{ URL::to('/img/baner10.png') }}" class="img-responsive" alt="BCPS">
+                <img src="{{ URL::to('/img/baner10.png') }}" class="img-responsive"
+                    alt="BCPS">
             </div>
             <div class="flex justify-center pt-8 sm:justify-center sm:pt-0">
-                    <h1 class="text-primary"> Bank Reconcilation</h1>
+                <h1 class="text-primary"> Bank Reconcilation</h1>
             </div>
 
             <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
@@ -415,28 +442,45 @@
 
                     <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
                         <div class="flex items-center">
-                            <a href="https://www.positronx.io/laravel-import-expert-excel-and-csv-file-tutorial-with-example/" class="btn btn-outline-success underline">
-                            BASE LINK              
-                            </a>
 
-                            <a class="btn btn-outline-success" href="{{ route('switch-file-import') }}">GO </a>
-                              <br/>
-                            <a class="btn btn-outline-success" href="{{ route('get-data-n') }}"> GOTO</a>
-                              <br/>
-                            <a class="btn btn-outline-success" href="{{ route('clear-user-all') }}"> CLEAR</a>
+                            <ul>
+                                <li class="">
+                                    <a class="btn btn-outline-success"
+                                        href="{{ route('switch-file-import') }}">GO </a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-outline-success"
+                                        href="{{ route('get-data-n') }}"> GOTO</a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-outline-success"
+                                        href="{{ route('clear-user-all') }}"> CLEAR</a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-outline-success"
+                                        href="{{ route('ag-bank-show') }}">
+                                        SHOW AG BANK</a>
+                                </li>
 
-                            
+                                <li width: 117px; height: 26px;>
+                                    <a href="https://www.positronx.io/laravel-import-expert-excel-and-csv-file-tutorial-with-example/"
+                                        class="btn btn-outline-success underline">
+                                        BASE LINK
+                                    </a>
+                                </li>
+
+                            </ul>
                         </div>
 
                         <div class="ml-12">
                             <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                                 <p>
-                                    ====TERMINAL COMMANDS====<br/>
-                                    composer require maatwebsite/excel --ignore-platform-reqs<br/>
-                                    php artisan make:controller LedgerController<br/>
-                                    php artisan migrate <br/>
-                                    php artisan storage:link<br/>
-                                    composer require yajra/laravel-datatables-oracle<br/>
+                                    ====TERMINAL COMMANDS====<br />
+                                    composer require maatwebsite/excel --ignore-platform-reqs<br />
+                                    php artisan make:controller LedgerController<br />
+                                    php artisan migrate <br />
+                                    php artisan storage:link<br />
+                                    composer require yajra/laravel-datatables-oracle<br />
                                 </p>
                             </div>
                         </div>
@@ -444,21 +488,33 @@
 
                     <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
                         <div class="flex items-center">
-                              
-                                <a class="btn btn-outline-success" href="{{ route('l-file-import-export') }}"> GO LEDGER</a>
-                                   <br/>
-                                <a class="btn btn-outline-success" href="{{ route('clear-ledger') }}"> CLEAR Ledger</a>
-                                   <br/>
-                                <a class="btn btn-outline-success" href="{{ route('get-ledger-dataview') }}"> SHOW Ledger</a>
-                                   <br/>
-                                <a class="btn btn-outline-success" href="{{ route('lata') }}"> SHOW Ledger DataTable</a>
-                                 
+
+                            <ul>
+                                <li>
+                                    <a class="btn btn-outline-success"
+                                        href="{{ route('l-file-import-export') }}"> GO LEDGER</a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-outline-success"
+                                        href="{{ route('clear-ledger') }}">
+                                        CLEAR Ledger</a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-outline-success"
+                                        href="{{ route('get-ledger-dataview') }}"> SHOW Ledger</a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-outline-success" href="{{ route('lata') }}">
+                                        SHOW Ledger DataTable</a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-outline-success" href="{{ route('queryexe') }}">
+                                        QUERY EXECUTOR</a>
+                                </li>
+                            </ul>
+
                         </div>
 
-                        <div class="flex items-center">
-                                <br/>
-                                <a class="btn btn-outline-success" href="{{ route('queryexe') }}"> QUERY EXECUTE</a>
-                        </div>
                     </div>
 
                 </div>
