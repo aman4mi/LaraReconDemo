@@ -11,7 +11,7 @@ class AgraniBankStatement extends Model
 
      /**
      * The attributes that are mass assignable.
-     *
+     *https://laracasts.com/discuss/channels/general-discussion/import-csv-form-inputs-to-same-mysql-table
      * @var array
      */
     protected $fillable = [
